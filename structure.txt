@@ -1,0 +1,37 @@
+project_root/
+├── alembic/                # миграции БД
+├── src/
+│   ├── auth/               # аутентификация и авторизация
+│   │   ├── router.py
+│   │   ├── schemas.py
+│   │   ├── models.py
+│   │   ├── service.py
+│   │   └── dependencies.py
+│   ├── users/              # пользователи (врачи, пациенты)
+│   │   ├── router.py
+│   │   ├── schemas.py
+│   │   ├── models.py
+│   │   ├── service.py
+│   │   └── dependencies.py
+│   ├── treatment/          # курсы лечения и назначения
+│   │   ├── router.py
+│   │   ├── schemas.py
+│   │   ├── models.py
+│   │   ├── service.py
+│   │   └── dependencies.py
+│   ├── pharmacy/           # интеграция с аптекой
+│   │   ├── router.py
+│   │   ├── schemas.py
+│   │   ├── service.py
+│   │   └── client.py
+│   ├── admin/              # административные функции
+│   │   ├── router.py
+│   │   ├── service.py
+│   ├── config.py           # глобальные настройки
+│   ├── database.py         # подключение к БД
+│   ├── main.py             # точка входа
+├── tests/                  # тесты
+├── requirements.txt
+├── .env
+├── docker-compose.yml
+└── README.md
